@@ -19,7 +19,6 @@ public class App {
 
     }
 
- 
     public static void bubleSort(int[] array) {
         Logger logger = Logger.getLogger(App.class.getName());
         logger.setLevel(Level.INFO);
