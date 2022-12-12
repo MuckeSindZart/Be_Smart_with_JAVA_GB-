@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
 
         List<Integer> list = getRandomArray(10, 0, 100);
-        
+
         System.out.println(list);
         System.out.println(sorted(list));
 
@@ -30,7 +30,7 @@ public class App {
         }
 
         int mid = list.size() / 2;
-        
+
         return merged(
                 sorted(list.subList(0, mid)),
                 sorted(list.subList(mid, list.size())));

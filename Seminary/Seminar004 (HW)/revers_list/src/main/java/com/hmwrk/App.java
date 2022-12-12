@@ -8,7 +8,7 @@ public class App {
     public static void main(String[] args) {
 
         LinkedList<Integer> lList = getRandomArray(10, 0, 10);
-        
+
         System.out.println(lList);
         System.out.println(reverseLinkedList(lList));
 
