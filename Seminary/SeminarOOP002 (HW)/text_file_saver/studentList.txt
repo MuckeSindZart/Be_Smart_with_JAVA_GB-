@@ -1,0 +1,6 @@
+Some_Name=5.8
+Some_Name1=4.0
+Some_Name2=32.0
+Some_Name5=63.12
+Some_Name17=13.12
+
