@@ -34,11 +34,11 @@ public class hmwrk3 {
     }
 
     public static void checkArraySize(String[][] array, int reqSize)  throws MyArraySizeException{
-        if (array.length != 4) {
+        if (array.length != reqSize) {
             throw new MyArraySizeException();
         } else {
             for (int i = 0; i < reqSize; i++) {
-                if (array[i].length != 4) {
+                if (array[i].length != reqSize) {
                     throw new MyArraySizeException();
                 }
             }
