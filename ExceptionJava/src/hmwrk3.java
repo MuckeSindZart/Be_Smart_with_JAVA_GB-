@@ -33,10 +33,20 @@ public class hmwrk3 {
 
     }
 
-    public static int arraySum(String[][] array) throws MyArraySizeException, MyArrayDataException {
-        if (array.length != 4 || array[0].length != 4) {
+    public static void checkArraySize(String[][] array, int reqSize)  throws MyArraySizeException{
+        if (array.length != 4) {
             throw new MyArraySizeException();
+        } else {
+            for (int i = 0; i < reqSize; i++) {
+                if (array[i].length != 4) {
+                    throw new MyArraySizeException();
+                }
+            }
         }
+    }
+
+    public static int arraySum(String[][] array) throws MyArraySizeException, MyArrayDataException {
+        checkArraySize(array, 4);
 
         int sum = 0;
 
